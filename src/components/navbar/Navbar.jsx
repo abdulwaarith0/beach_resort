@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
