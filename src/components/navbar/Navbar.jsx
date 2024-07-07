@@ -26,17 +26,14 @@ const Navbar = () => {
                             className="nav-icon" />
                     </button>
                 </div>
-                {
-                    !isOpen && (
-                        <ul className={` ${isOpen ? 'nav-links show-nav' : 'nav-links'}`}>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/rooms">Rooms</Link>
-                            </li>
-                        </ul>
-                    )};
+                <ul className={`nav-links ${isOpen ? 'show-nav' : ''}`}>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/rooms">Rooms</Link>
+                    </li>
+                </ul>
             </div>
         </div>
     )
