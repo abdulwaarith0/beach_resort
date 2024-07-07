@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 {
-                    isOpen && (
+                    !isOpen && (
                         <ul className={` ${isOpen ? 'nav-links show-nav' : 'nav-links'}`}>
                             <li>
                                 <Link to="/">Home</Link>

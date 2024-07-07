@@ -8,7 +8,7 @@ const Room = ({ room }) => {
     return (
         <article className="room">
             <div className="img-container">
-                <Link to="/">
+                <Link to={`/rooms/${slug}`}>
                     <img src={images[0] || defaultImg}
                         alt={name} />
                 </Link>
